@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Incorrect way to modify innerHTML - this will only work if there is only one element inside the div.
+    document.getElementById("myDiv").innerHTML += "<p>This text might not show up correctly.</p>";
+  </script>
+</body>
+</html>
